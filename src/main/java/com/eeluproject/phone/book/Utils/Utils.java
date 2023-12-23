@@ -242,6 +242,13 @@ public class Utils {
     }
   }
 
+  /**
+   * Performs quicksort on an ArrayList of Contact objects based on their names.
+   *
+   * @param contacts The ArrayList of Contact objects to be sorted.
+   * @return A sorted ArrayList of Contact objects.
+   */
+
   public static ArrayList<Contact> quickSortNames(ArrayList<Contact> contacts) {
     if (contacts.size() < 2) {
       return contacts;
@@ -256,7 +263,7 @@ public class Utils {
         right.add(contacts.get(i));
         continue;
       }
-        left.add(contacts.get(i));
+      left.add(contacts.get(i));
     }
 
     ArrayList<Contact> sorted = new ArrayList<>();
@@ -266,6 +273,13 @@ public class Utils {
 
     return sorted;
   }
+
+  /**
+   * Performs quicksort on an ArrayList of User objects based on their email addresses.
+   *
+   * @param users The ArrayList of User objects to be sorted.
+   * @return A sorted ArrayList of User objects.
+   */
 
   public static ArrayList<User> quickSortEmail(ArrayList<User> users) {
     if (users.size() < 2) {
@@ -279,10 +293,9 @@ public class Utils {
     for (int i = 0; i < users.size() - 1; i++) {
       if (users.get(i).getEmail().compareTo(pivot.getEmail()) > 0) {
         right.add(users.get(i));
-         continue;
+        continue;
       }
-        left.add(users.get(i));
-
+      left.add(users.get(i));
     }
 
     ArrayList<User> sorted = new ArrayList<>();
@@ -292,6 +305,13 @@ public class Utils {
 
     return sorted;
   }
+
+  /**
+   * Performs quicksort on an ArrayList of Contact objects based on their email addresses.
+   *
+   * @param contacts The ArrayList of Contact objects to be sorted.
+   * @return A sorted ArrayList of Contact objects.
+   */
 
   public static ArrayList<Contact> quickSortContactEmails(
     ArrayList<Contact> contacts
@@ -309,7 +329,7 @@ public class Utils {
         right.add(contacts.get(i));
         continue;
       }
-        left.add(contacts.get(i));
+      left.add(contacts.get(i));
     }
 
     ArrayList<Contact> sorted = new ArrayList<>();
@@ -319,6 +339,13 @@ public class Utils {
 
     return sorted;
   }
+
+  /**
+   * Performs quicksort on an ArrayList of User objects based on their IDs.
+   *
+   * @param users The ArrayList of User objects to be sorted.
+   * @return A sorted ArrayList of User objects.
+   */
 
   public static ArrayList<User> quickSortIds(ArrayList<User> users) {
     if (users.size() < 2) {
@@ -334,7 +361,7 @@ public class Utils {
         right.add(users.get(i));
         continue;
       }
-        left.add(users.get(i));
+      left.add(users.get(i));
     }
 
     ArrayList<User> sorted = new ArrayList<>();
@@ -345,6 +372,12 @@ public class Utils {
     return sorted;
   }
 
+  /**
+   * Performs quicksort on an ArrayList of Contact objects based on their IDs.
+   *
+   * @param contacts The ArrayList of Contact objects to be sorted.
+   * @return A sorted ArrayList of Contact objects.
+   */
   public static ArrayList<Contact> quickSortContactIds(
     ArrayList<Contact> contacts
   ) {
