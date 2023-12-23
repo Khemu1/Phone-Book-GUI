@@ -753,6 +753,7 @@ public class UserPanel extends javax.swing.JFrame {
         Logout.setForeground(new java.awt.Color(204, 0, 51));
         Logout.setText("Logout");
         Logout.setBorder(null);
+        Logout.setContentAreaFilled(false);
         Logout.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Logout.setName("Logout"); // NOI18N
         Logout.setOpaque(true);
