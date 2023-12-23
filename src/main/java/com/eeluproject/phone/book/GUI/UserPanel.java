@@ -772,7 +772,7 @@ public class UserPanel extends javax.swing.JFrame {
         searchLabel.setFont(new java.awt.Font("Segoe UI Semibold", 1, 13)); // NOI18N
         searchLabel.setForeground(new java.awt.Color(255, 255, 255));
         searchLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        searchLabel.setText("Search by email or Phone Number :");
+        searchLabel.setText("Search By Any Attribute");
         searchLabel.setName("searchLabel"); // NOI18N
         searchPanel.add(searchLabel);
 
