@@ -119,9 +119,13 @@ public class BookedContact {
   }
 
   public static ArrayList<Contact> filterhBooked(String s) {
+    if (s.contains("c-")) {
+      s = s.substring(2);
+      System.out.println("contains c-");
+    }
     ArrayList<Contact> contacts1 = new ArrayList<>();
     for (Contact contact : contacts) {
-      if (contact.getEmail().toLowerCase().contains(s) || contact.getPhone().toLowerCase().contains(s)  ||  contact.getName().toLowerCase().contains(s) || contact.getAddress().toLowerCase().contains(s) ) {
+      if (String.valueOf(contact.getId()).toLowerCase().contains(s) ||contact.getEmail().toLowerCase().contains(s) || contact.getPhone().toLowerCase().contains(s)  ||  contact.getName().toLowerCase().contains(s) || contact.getAddress().toLowerCase().contains(s) ) {
         contacts1.add(contact);
       }
     }
