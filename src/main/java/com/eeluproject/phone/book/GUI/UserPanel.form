@@ -562,7 +562,7 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="text" type="java.lang.String" value="Search by email or Phone Number :"/>
+                <Property name="text" type="java.lang.String" value="Search By Any Attribute"/>
                 <Property name="name" type="java.lang.String" value="searchLabel" noResource="true"/>
               </Properties>
             </Component>
